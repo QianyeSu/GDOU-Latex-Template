@@ -1,2 +1,2 @@
-# GDOU_Latex_Template
+# GDOU Latex Template
 LaTeX Thesis Template for Guangdong Ocean University
