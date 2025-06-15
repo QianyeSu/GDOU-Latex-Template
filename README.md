@@ -25,10 +25,17 @@ GDOU/
 ├── Tex/              # Chapter .tex files and other source files
 ├── Thesis.pdf        # Example compiled thesis (PDF)
 ├── Thesis.synctex.gz # SyncTeX file for PDF/TeX synchronization
-└── Thesis.tex        # Main LaTeX thesis file
+├── Thesis.tex        # Main LaTeX thesis file
+└── example.png       # Example image (see below)
 ```
 
 > **Note:** The above listing may be incomplete due to API limitations. Visit the [GDOU directory](https://github.com/SQYQianYe/GDOU_Latex_Template/tree/main/GDOU) on GitHub for the most up-to-date contents.
+
+## Example Image
+
+Below is an example image included in the template directory:
+
+![example](./GDOU/example.png)
 
 ## Getting Started
 
