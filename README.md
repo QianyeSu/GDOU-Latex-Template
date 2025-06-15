@@ -31,11 +31,6 @@ GDOU/
 
 > **Note:** The above listing may be incomplete due to API limitations. Visit the [GDOU directory](https://github.com/SQYQianYe/GDOU_Latex_Template/tree/main/GDOU) on GitHub for the most up-to-date contents.
 
-## Example Image
-
-Below is an example image included in the template directory:
-
-![example](./example.png)
 
 ## Getting Started
 
@@ -46,6 +41,12 @@ Below is an example image included in the template directory:
    - On Windows: `Compile.bat`
    - On Unix/Linux: `Compile.sh`
 5. The output PDF (`Thesis.pdf`) will be generated in the `GDOU/` directory.
+
+## Example Image
+
+Below is an example image included in the template directory:
+
+![example](./example.png)
 
 ## Source
 
