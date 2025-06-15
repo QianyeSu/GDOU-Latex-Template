@@ -35,7 +35,7 @@ GDOU/
 
 Below is an example image included in the template directory:
 
-![example](./GDOU/example.png)
+![example](./example.png)
 
 ## Getting Started
 
