@@ -1,7 +1,7 @@
 # Guangdong Ocean University LaTeX Thesis Template
 
 This repository provides a LaTeX template for writing academic theses at Guangdong Ocean University (GDOU).  
-The template is based on the original version from [here](https://github.com/jiangtian1/GDOU/tree/main), and is tailored to meet the formatting requirements of GDOU degree theses.
+It is tailored to meet the formatting requirements of GDOU degree theses.
 
 ## Features
 
