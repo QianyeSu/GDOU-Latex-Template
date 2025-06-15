@@ -1,0 +1,416 @@
+%%%%% --------------------------------------------------------------------------------
+%%
+%%%%***************************** Version Information ********************************
+%%
+%% this is the "commons.sty" package used for configure document styles
+%% Copyright (C) Huangrui Mo <huangrui.mo@gmail.com> 
+%% This is free software: you can redistribute it and/or modify it
+%% under the terms of the GNU General Public License as published by
+%% the Free Software Foundation, either version 3 of the License, or
+%% (at your option) any later version.
+%%
+\NeedsTeXFormat{LaTeX2e}[1995/12/01]
+\ProvidesPackage{commons}
+[2014/10/01 v0.1 commons 
+macros package]
+%%%%% --------------------------------------------------------------------------------
+%%
+%%%%******************************* Declare Options **********************************
+%%
+\newif\ifCOMMONS@myhdr \COMMONS@myhdrfalse
+\DeclareOption{myhdr}{% user defined header and footer style
+    \COMMONS@myhdrtrue%
+}
+\newif\ifCOMMONS@lscape \COMMONS@lscapefalse
+\DeclareOption{lscape}{% landscape layout
+    \COMMONS@lscapetrue%
+}
+\newif\ifCOMMONS@geometry \COMMONS@geometryfalse
+\DeclareOption{geometry}{% enable geometry for redefining page layout
+    \COMMONS@geometrytrue%
+}
+\newif\ifCOMMONS@numbered \COMMONS@numberedtrue
+\newif\ifCOMMONS@authoryear \COMMONS@authoryearfalse
+\newif\ifCOMMONS@alpha \COMMONS@alphafalse
+\DeclareOption{numbered}{% enable numbered citation style
+    \COMMONS@numberedtrue%
+    \COMMONS@authoryearfalse
+    \COMMONS@alphafalse
+}
+\DeclareOption{authoryear}{% enable author year citation style
+    \COMMONS@numberedfalse%
+    \COMMONS@authoryeartrue
+    \COMMONS@alphafalse
+}
+\DeclareOption{alpha}{% enable alpha citation style
+    \COMMONS@numberedfalse%
+    \COMMONS@authoryearfalse
+    \COMMONS@alphatrue
+}
+\newif\ifCOMMONS@list \COMMONS@listfalse
+\DeclareOption{list}{% enable enhanced list structures
+    \COMMONS@listtrue%
+}
+\newif\ifCOMMONS@color \COMMONS@colorfalse
+\DeclareOption{color}{% enable color package to use color
+    \COMMONS@colortrue%
+}
+\newif\ifCOMMONS@background \COMMONS@backgroundfalse
+\DeclareOption{background}{% enable page background
+    \COMMONS@colortrue% need a color package
+    \COMMONS@backgroundtrue%
+}
+\newif\ifCOMMONS@tikz \COMMONS@tikzfalse
+\DeclareOption{tikz}{% enable tikz package for complex diagrams
+    \COMMONS@colortrue% need xcolor package
+    \COMMONS@tikztrue%
+}
+\newif\ifCOMMONS@table \COMMONS@tablefalse
+\DeclareOption{table}{% enable a table package for complex tables
+    \COMMONS@tabletrue%
+}
+\newif\ifCOMMONS@math \COMMONS@mathfalse
+\DeclareOption{math}{% enable math package
+    \COMMONS@mathtrue%
+}
+%% end-user parameters, each option is declared by one declare option command
+\DeclareOption*{% handle non-implemented options
+    \PackageWarning{commons}{Unknown option '\CurrentOption'}%
+}
+%% terminates all options processing
+\ProcessOptions\relax
+%%%%% --------------------------------------------------------------------------------
+%%
+%%%%******************************* Required Packages ********************************
+%%
+%% Language Setting
+\RequirePackage{ifpdf,ifxetex}
+%% packages and settings depend on PDF mode
+\ifxetex % running xelatex in PDF mode
+%%%%% --------------------------------------------------------------------------------
+%%
+%%%%********************************** Xelatex ***************************************
+%%
+%%% >>> System Font Environment
+%%
+%% If compile by "xelatex", then it support system fonts.
+%% Fonts and tweaks for xelatex:
+\RequirePackage{fontspec}% fontspec package.
+\defaultfontfeatures{Ligatures=TeX}% use tex style to support LaTeX quoting style.使用 tex 样式支持 LaTeX 引用样式
+\setCJKfamilyfont{hwxk}{STXingkai}             %使用STXingkai华文行楷字体
+%\setCJKmainfont[AutoFakeBold=true]{SimSun}
+\let\huawenxingkai\relax % 清除旧定义
+\let\heiti\relax % 清除旧定义
+\let\songti\relax % 清除旧定义
+\newCJKfontfamily\heiti{SimHei}[AutoFakeBold=2.0]
+\newCJKfontfamily\songti{SimSun}[AutoFakeBold=1.5]
+%\newCJKfontfamily{\heiti}[AutoFakeBold={3.17}]{SimHei}
+%% -- Set English fonts.
+%% Roman, or Serif - typefaces are named for the features at the ends of their strokes
+%% determine \rmfamily, usually for main contents
+%% because of \renewcommand*{\familydefault}{\rmdefault}, it's also determine \normalfont.
+%% examples: Times New Roman, Garamond, Adobe Garamond Pro
+\setmainfont{Times New Roman}
+%\setCJKmainfont[AutoFakeBold=true]{SimHei}  %%设置黑体的粗体形式\setCJKmainfont[BoldFont={SimHei}, ItalicFont={KaiTi}]{FangSong}
+%\newCJKfontfamily{\heiti}[AutoFakeBold={3.17}]{SimHei} %%\示例：textbf{\heiti {这是加粗后的字体-黑体}}\\
+%\newCJKfontfamily{\heiti}[AutoFakeBold={3.17}]{SimHei}
+%\setmainfont[BoldFont=Garamond-Bold,ItalicFont=Garamond-Italic]{Garamond}%
+%% Sans serif - typefaces without strokes (without serif) to get high readability
+%% determine \sffamily, usually for signage, headings that demanding high readability
+%% examples: Helvetica, Gill Sans, Futura
+%\setsansfont{Gill Sans MT}%
+%% Monospaced - typefaces that every glyph is the same width (opposed to variable-width fonts).
+%% determine \ttfamily, usually for programming, tabulated data, etc.
+%% examples: Rockwell, Andale Mono, Courier, Monaco
+%\setmonofont{Rockwell}%
+\else
+\ifpdf % running pdfTeX in PDF mode
+%%%%% --------------------------------------------------------------------------------
+%%
+%%%%******************************** Pdflatex ****************************************
+%%
+%%% >>>  Input encoding and the font encoding
+%%
+%% Specify language.
+%% Set Language you want to use: \RequirePackage[language]{babel}
+%% You should place it soon after the \documentclass command, so that all the other
+%% packages you load afterwards will know the language you are using.
+%\RequirePackage[english]{babel}% language.
+%% Specify input encoding.
+\RequirePackage[utf8]{inputenc}% make sure your document is saved using the UTF-8 encoding.
+%\RequirePackage[latin1]{inputenc}% latin encoding
+%% Font encoding.
+\RequirePackage[T1]{fontenc}% enable modern font encoding
+%% Font package.
+\RequirePackage{newtxtext,newtxmath}
+%% Options:
+%% Text + Math: Adobe Times Roman (Recommended)
+%% - \RequirePackage{newtxtext,newtxmath}
+%% Text + Math: Palatino
+%% - \RequirePackage{palatino}
+%% Text + Math: Adobe Times Roman
+%% - \RequirePackage{mathptmx,newtxmath}
+\fi
+\fi
+%%
+%% >>> graphic packages
+%%
+\RequirePackage{graphicx}% graphics packages for including graphics
+\RequirePackage[font={normalsize,stretch=1.2},labelfont=bf,justification=centering,labelsep=space]{caption}% caption options like:[margin=10pt,font=small,labelfont=bf]
+\RequirePackage{bicaption}%属于caption的扩展包，有中英文双语
+\RequirePackage{subcaption}% subcaption package for subfigures
+\captionsetup[table][bi-first]{name=表}
+\captionsetup[table][bi-second]{name=Table}
+\captionsetup[figure][bi-first]{name=图}
+\captionsetup[figure][bi-second]{name=Fig}
+\renewcommand {\thetable} {\thechapter{}-\arabic{table}}
+\renewcommand {\thefigure} {\thechapter{}-\arabic{figure}}
+%\captionsetup[figure][bi-second]{name=Fig}%设置英文图开头为Fig
+\RequirePackage[section]{placeins}% to prevent floats from being moved over section
+%%
+%% >>> Page Layout and Line Spacing
+%%
+\ifCOMMONS@myhdr% header and footer style
+    \RequirePackage{fancyhdr}% fancy headers and footers
+\fi
+\ifCOMMONS@lscape% landscape layout
+    \RequirePackage{fancyhdr}% fancy headers and footers
+    %% Usage: \begin{landscape} [\thispagestyle{lscape}] text... \end{landscape}
+    \RequirePackage{pdflscape}% landscape environment
+    \RequirePackage[absolute]{textpos}% rotated page number
+\fi
+\ifCOMMONS@geometry% enable geometry to redefine page layout
+    \RequirePackage{geometry}% page layout
+    %\RequirePackage{setspace}% line spacing
+\fi
+\RequirePackage{microtype}% improves general appearance of the text
+%%
+%%
+%% >>> List Structures
+%%
+\ifCOMMONS@list% enable enhanced list and verbatim structures
+    \RequirePackage{enumitem}% configure the enumerate environment
+    \RequirePackage{listings}% useful for Algorithm and Coding
+    %% Improves the verbatim environment, fixing some bugs. Moreover
+    %% it provides the comment environment, that lets you add multiple-line
+    %% comments or easily comment out big parts of the code.
+    \RequirePackage{verbatim}
+\fi
+%%
+%%% >>> Color
+%%
+\ifCOMMONS@color% enable color package to use color
+    %\RequirePackage{color}%
+    \RequirePackage[usenames,dvipsnames,table]{xcolor}%
+\fi
+%%
+%%% >>> Tables
+%%
+\ifCOMMONS@table% enable a table for complex tables
+    %% ctable package imports the array, tabularx and booktabs packages
+    %% all commands from those packages are available as well.
+    \RequirePackage{ctable}%
+\fi
+%%
+%% >>> Math packages
+%%
+\ifCOMMONS@math% enable some extra math package
+    \RequirePackage{mathtools,amstext,amsfonts,amssymb}
+\fi
+%%
+%% >>> Tkiz
+%%
+%% Draw graphics directly with TeX commands
+%% LaTeX/PGF/TikZ to draw procedural graphics directly with TeX commands.
+%% Using TikZ in a LaTeX document requires loading the tikz package:
+\ifCOMMONS@tikz% enable tikz for complex diagrams
+    \RequirePackage{tikz}%
+    %% This will automatically load the pgf package. To load further libraries use:
+    \usetikzlibrary{
+        positioning,
+        arrows,
+        calc,
+        trees
+    }%
+\fi
+%% Examples for libraries are "arrows", "automata", "backgrounds", "calendar",
+%% "chains", "matrix", "mindmap", "patterns", "petri", "shadows", "shapes.geometric",
+%% "shapes.misc", "spy", "trees".
+%%
+%% >>> hyperref packages
+%%
+%% packages and settings depend on PDF mode
+\ifxetex % running xelatex in PDF mode
+    \RequirePackage[xetex]{hyperref}
+\else
+    \ifpdf % running pdfTeX in PDF mode
+        \RequirePackage[pdftex]{hyperref}
+    \fi
+\fi
+%% Setting Hyperlinks
+\hypersetup{% set hyperlinks.
+    unicode=true,% allows non-Latin based languages in bookmarks
+    %pdftitle={},% title
+    %pdfauthor={},% author
+    %pdfsubject={},% subject
+    %pdfkeywords={keyword1}{key2} {key3},% list of keywords, and uncomment this line if desired
+    %pdftoolbar=true,% show Acrobat's toolbar?
+    %pdfmenubar=true,% show Acrobat's menu?
+    pdffitwindow=false,% window fit to page when opened
+    pdfstartview={FitH},% fits the width of the page to the window
+    %pdfnewwindow=true,% links in new window
+    %colorlinks=true,% false: boxed links; true: colored links
+    %linkcolor=blue,% color of internal links
+    %citecolor=green,% color of links to bibliography
+    %filecolor=magenta,% color of file links
+    %urlcolor=cyan,% color of external links
+    bookmarksnumbered=true,% put section numbers in bookmarks
+    hidelinks% remove link color and border.
+}
+%% it gives LaTeX the possibility to manage links
+%% within the document or to any URL when you compile in PDF.
+%% Just load the package in the preamble, at the end of all the
+%% other packages but prior to other settings.
+%%%%% --------------------------------------------------------------------------------
+%%
+%%%%**************************** Configuration Command *******************************
+%%
+%% >>> Extensions and Directories for graphics
+%%
+%% Declare graphic extensions for automatic selection when including graphics.
+%% By avoiding supplying graphic extensions in \includegraphics command,
+%% the source file can be more general and adaptive.
+\ifxetex % running xelatex in PDF mode
+    \DeclareGraphicsExtensions{.pdf,.eps,.ps,.tif,.jpg,.png,.bmp,.gif}%
+\else
+    \ifpdf % running pdfTeX in PDF mode
+        \DeclareGraphicsExtensions{.pdf,.jpg,.jpeg,.png}%
+        %% To support .eps, .tif for pdfTex, recommend using epstopdf converter
+        %% on the command line only, rather than embedding into source files.
+    \fi
+\fi
+\graphicspath{{Img/}}% search path for figures
+%%
+%%% >>> Page background:
+%%
+\ifCOMMONS@background% enable page background
+    \definecolor{backgroundcolor}{rgb}{0.85,0.85,0.85}
+    \pagecolor{backgroundcolor} % page background color, require a color package.
+\fi
+%%
+%%% >>> Layout and Margin
+%%
+\ifCOMMONS@geometry% enable geometry to redefine page layout
+    \geometry{paper=a4paper,left=230mm,right=25mm,top=25mm,bottom=15mm}% reduced margins at each side.%海大版芯要求
+\fi
+%%
+%%% >>> Page header and footer Style
+%%
+%% Page styles in Latex refers to headers and footers of a document.
+%% These headers/footers typically contain document titles, chapter
+%% or section numbers/names, and page numbers.
+%% configure fancy style（配置花式风格
+\ifCOMMONS@myhdr% user defined header and footer style  用户定义的页眉和页脚样式
+\pagestyle{fancy}
+    \providecommand{\chaptermark}{}% compatibility for non book classes
+    \providecommand{\thechapter}{}% compatibility for non book classes
+    \providecommand{\CTEXthechapter}{\thechapter.}% compatibility for non ctex classes
+    %% reset style of chapter and section mark to actual name
+    \renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}}%
+    \renewcommand{\sectionmark}[1]{\markright{\MakeUppercase{#1}}{}}%
+    %\renewcommand\thepage{\Roman{page}} %罗马大写的尝试
+    %% deactivate uppercase effect
+    \renewcommand{\MakeUppercase}[1]{#1}
+%% define different kinds of header and footer for different parts为 不同部分定义不同类型的页眉和页脚
+\fancypagestyle{frontmatterstyle}{% style for frontmatter
+    \fancyhf{}% clear fields
+    %\fancyhead[RE]{\small \@title}% structure elements
+    %\fancyhead[LO]{\small \leftmark}% structure elements
+    %\fancyhead[LE]{\small \thepage}% page number
+    \fancyfoot[C]{\zihao{-5} \thepage}% page number  居中罗马数字编码
+    \pagenumbering{Roman}% page number  居中罗马数字编码
+    \renewcommand{\headrulewidth}{0pt}% header rule
+    \renewcommand{\footrulewidth}{0pt}% footer rule
+}
+\fancypagestyle{mainmatterstyle}{% style for mainmatter
+    \fancyhf{}% clear fields
+    \fancyhead[CE]{\zihao{-4} \@title}% structure elements
+    \fancyhead[CO]{\zihao{-4} 广东海洋大学\UCAS@value@degree 论文 }% structure elements
+    \fancyfoot[C]{\zihao{-5} \thepage} % page number 
+    %\fancyhead[RO]{\small \thepage}% page number
+    %双线页眉的设置
+    \makeatletter %双线页眉
+    \def\headrule{{\if@fancyplain\let\headrulewidth\plainheadrulewidth\fi%
+    \hrule\@height 1.5pt \@width\headwidth\vskip1pt%上面线为1pt粗
+    \hrule\@height 0.5pt\@width\headwidth  %下面0.5pt粗
+    \vskip-2\headrulewidth\vskip-1.5pt}      %两条线的距离1pt
+    \vspace{6mm}}     %双线与下面正文之间的垂直间距
+    \makeatother
+    %\renewcommand{\headrulewidth}{1pt}
+    \renewcommand{\footrulewidth}{0pt}% footer rule
+    \CTEXsetup[format={\raggedright}]{chapter}  %chaper左靠齐
+}
+\fancypagestyle{backmatterstyle}{% header and footer style for backmatter
+    \fancyhf{}% clear fields
+    \fancyhead[CE]{\zihao{-4} \@title}% structure elements
+    \fancyhead[CO]{\zihao{-4} 广东海洋大学\UCAS@value@degree 论文 }% structure elements
+    %\fancyhead[LE]{\small \thepage }% page number
+    %\fancyhead[RO]{\small \thepage}% page number
+    \fancyfoot[C]{\zihao{-5} \thepage} % page number 
+    %\renewcommand{\headrulewidth}{1pt}% header rule
+    %\renewcommand{\footrulewidth}{0pt}% footer rule
+    \CTEXsetup[format={\centering}]{chapter}  %chaper居中7y
+}
+%% redefine \frontmatter to include the change 重新定义\frontmatter以包含更改
+\providecommand{\frontmatter}{}% compatibility for non book classes
+\let\myfrontmatter\frontmatter%
+\renewcommand{\frontmatter}{%
+    \myfrontmatter%
+    \pagestyle{frontmatterstyle}%
+}
+%% redefine \mainmatter to include the change
+\providecommand{\mainmatter}{}% compatibility for non book classes
+\let\mymainmatter\mainmatter%
+\renewcommand{\mainmatter}{%
+    \mymainmatter%
+    \pagestyle{mainmatterstyle}%
+}
+%% redefine \backmatter to include the change
+\providecommand{\backmatter}{}% compatibility for non book classes 致谢后的格式，不需要
+\let\mybackmatter\backmatter%
+\renewcommand{\backmatter}{%
+    \mybackmatter%
+    \pagestyle{backmatterstyle}%
+}
+%% Some Latex commands, like \chapter, use the \thispagestyle command一些Latex命令，如\c章法，使用\thispagestyle命令
+
+%% to automatically switch to the plain page style, thus ignoring the %%自动切换到普通页面样式，从而忽略
+%% page style currently in effect. To customize such pages you must %%当前有效的页面样式。要自定义此类页面，您必须
+%% redefine the plain pagestyle. If you want the plain style inherits %%重新定义纯页面样式。如果希望普通样式继承
+%% the current style, comment all the lines in plain style definition.%%当前样式，注释普通样式定义中的所有行
+\fancypagestyle{plain}{%
+    %\fancyhf{}% clear fields
+    %\renewcommand{\headrulewidth}{0pt}% header rule
+    %\renewcommand{\footrulewidth}{0pt}% footer rule
+}
+\fi
+\ifCOMMONS@lscape% configure landscape environment
+\fancypagestyle{lscape}{% landscape layout style
+    \fancyhf{}% clear fields
+    \fancyfoot[CE,CO]{%
+    %% textpos: \begin{textblock}{<blockwidth>}[0.5,0.5](<hpos>,<vpos>) text... \end{textblock}
+    %% origin of the absolute coordinate is the top-left corner of the page
+    %% [0.5,0.5] means reference point of the block is the middle
+    \begin{textblock}{0.1}[0.5,0.5](0.85,0.5){\rotatebox{90}{\small \thepage}}\end{textblock}% position the page number
+    }
+    %% set units of <blockwidth>, <hpos>, and <vpos> arguments by corresponding modules 
+    \setlength{\TPHorizModule}{8.5in}% set to the width of page
+    \setlength{\TPVertModule}{11in}% set to the height of page
+    \renewcommand{\headrulewidth}{0pt}% header rule
+    \renewcommand{\footrulewidth}{0pt}% footer rule
+}
+\fi
+%%%%% --------------------------------------------------------------------------------
+\endinput
+%% End of file
+%%%%% --------------------------------------------------------------------------------
