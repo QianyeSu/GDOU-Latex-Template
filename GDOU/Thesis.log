@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.4)  20 AUG 2025 20:45
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.4)  20 AUG 2025 22:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1056,31 +1056,6 @@ Package hyperref Info: Link coloring OFF on input line 54.
 Package hyperref Warning: Rerun to get /PageLabels entry.
 
 (./Tex/Front.tex
-LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/sl' in size <12> not available
-(Font)              Font shape `TU/TimesNewRoman(0)/m/it' tried instead on input line 34.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/it/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/it/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/it/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/it/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/it/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/it/12'.
-(microtype)             Ignoring protrusion settings for this character.
- [1
-
-] [2
-
-]
 Package microtype Info: Character `textendash ' is missing
 (microtype)             in font `TU/TimesNewRoman(0)/m/n/10.53937'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -1194,13 +1169,13 @@ Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             Ignoring protrusion settings for this character.
 
 
-./Tex/Front.tex:34: LaTeX Error: Bad math environment delimiter.
+./Tex/Front.tex:33: LaTeX Error: Bad math environment delimiter.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.34 \makecommittee
+l.33 \makecommittee
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1278,13 +1253,13 @@ Package microtype Info: Character `textquotedblleft ' is missing
 Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/TimesNewRoman(0)/m/n/5'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
 (f:/Latex/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (f:/Latex/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
  (f:/Latex/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (f:/Latex/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -1311,24 +1286,24 @@ Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/TimesNewRoman(0)/m/n/14.05249'.
 (microtype)             Ignoring protrusion settings for this character.
 
-./Tex/Front.tex:34: Missing } inserted.
+./Tex/Front.tex:33: Missing } inserted.
 <inserted text> 
                 }
-l.34 \makecommittee
+l.33 \makecommittee
                    
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
 
-Overfull \hbox (306.79134pt too wide) detected at line 34
+Overfull \hbox (306.79134pt too wide) detected at line 33
  [] 
  []
 
-./Tex/Front.tex:34: Extra }, or forgotten \endgroup.
+./Tex/Front.tex:33: Extra }, or forgotten \endgroup.
 \HyOrg@maketitle ...ao {4} \UCAS@value@advisor }}}
                                                    \\ {\zihao {4} \songti \U...
-l.34 \makecommittee
+l.33 \makecommittee
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1336,24 +1311,24 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./Tex/Front.tex:34: Missing } inserted.
+./Tex/Front.tex:33: Missing } inserted.
 <inserted text> 
                 }
-l.34 \makecommittee
+l.33 \makecommittee
                    
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
 
-Overfull \hbox (306.79134pt too wide) detected at line 34
+Overfull \hbox (306.79134pt too wide) detected at line 33
  [] 
  []
 
-./Tex/Front.tex:34: Extra }, or forgotten \endgroup.
+./Tex/Front.tex:33: Extra }, or forgotten \endgroup.
 \HyOrg@maketitle ...eetype \UCAS@value@degree }}}}
                                                    \\ {\zihao {4} \songti \U...
-l.34 \makecommittee
+l.33 \makecommittee
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1361,24 +1336,24 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./Tex/Front.tex:34: Missing } inserted.
+./Tex/Front.tex:33: Missing } inserted.
 <inserted text> 
                 }
-l.34 \makecommittee
+l.33 \makecommittee
                    
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
 
-Overfull \hbox (306.79134pt too wide) detected at line 34
+Overfull \hbox (306.79134pt too wide) detected at line 33
  [] 
  []
 
-./Tex/Front.tex:34: Extra }, or forgotten \endgroup.
+./Tex/Front.tex:33: Extra }, or forgotten \endgroup.
 \HyOrg@maketitle ...hao {4}\UCAS@value@subject }}}
                                                    \\ {\zihao {4} \songti \U...
-l.34 \makecommittee
+l.33 \makecommittee
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1386,24 +1361,24 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./Tex/Front.tex:34: Missing } inserted.
+./Tex/Front.tex:33: Missing } inserted.
 <inserted text> 
                 }
-l.34 \makecommittee
+l.33 \makecommittee
                    
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
 
-Overfull \hbox (306.79134pt too wide) detected at line 34
+Overfull \hbox (306.79134pt too wide) detected at line 33
  [] 
  []
 
-./Tex/Front.tex:34: Extra }, or forgotten \endgroup.
+./Tex/Front.tex:33: Extra }, or forgotten \endgroup.
 \HyOrg@maketitle ...zihao {4}\UCAS@value@major }}}
                                                    \\ {\zihao {4} \songti \U...
-l.34 \makecommittee
+l.33 \makecommittee
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1411,24 +1386,24 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./Tex/Front.tex:34: Missing } inserted.
+./Tex/Front.tex:33: Missing } inserted.
 <inserted text> 
                 }
-l.34 \makecommittee
+l.33 \makecommittee
                    
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
 
-Overfull \hbox (306.79134pt too wide) detected at line 34
+Overfull \hbox (306.79134pt too wide) detected at line 33
  [] 
  []
 
-./Tex/Front.tex:34: Extra }, or forgotten \endgroup.
+./Tex/Front.tex:33: Extra }, or forgotten \endgroup.
 \HyOrg@maketitle ...o {4}\UCAS@value@institute }}}
                                                    \\ \end {tabular} \vskip ...
-l.34 \makecommittee
+l.33 \makecommittee
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1436,15 +1411,93 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-[3] [4
+[1
+
+
+] [2
 
 
 ]
 File: Img/dabianweiyuan.png Graphic file (type bmp)
 <Img/dabianweiyuan.png>
 
-Overfull \hbox (12.55283pt too wide) in paragraph at lines 34--34
+Overfull \hbox (12.55283pt too wide) in paragraph at lines 33--33
  [] 
+ []
+
+[3
+
+] [4
+
+
+]
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `TU/TimesNewRoman(0)/m/n/18.06749'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `TU/TimesNewRoman(0)/m/n/18.06749'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteleft ' is missing
+(microtype)             in font `TU/TimesNewRoman(0)/m/n/18.06749'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteright ' is missing
+(microtype)             in font `TU/TimesNewRoman(0)/m/n/18.06749'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblleft ' is missing
+(microtype)             in font `TU/TimesNewRoman(0)/m/n/18.06749'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' is missing
+(microtype)             in font `TU/TimesNewRoman(0)/m/n/18.06749'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `TU/TimesNewRoman(0)/b/n/18.06749'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `TU/TimesNewRoman(0)/b/n/18.06749'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteleft ' is missing
+(microtype)             in font `TU/TimesNewRoman(0)/b/n/18.06749'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteright ' is missing
+(microtype)             in font `TU/TimesNewRoman(0)/b/n/18.06749'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblleft ' is missing
+(microtype)             in font `TU/TimesNewRoman(0)/b/n/18.06749'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' is missing
+(microtype)             in font `TU/TimesNewRoman(0)/b/n/18.06749'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+
+ []
+
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `TU/TimesNewRoman(0)/m/n/7.52812'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `TU/TimesNewRoman(0)/m/n/7.52812'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteleft ' is missing
+(microtype)             in font `TU/TimesNewRoman(0)/m/n/7.52812'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteright ' is missing
+(microtype)             in font `TU/TimesNewRoman(0)/m/n/7.52812'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblleft ' is missing
+(microtype)             in font `TU/TimesNewRoman(0)/m/n/7.52812'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' is missing
+(microtype)             in font `TU/TimesNewRoman(0)/m/n/7.52812'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+
  []
 
 [5
@@ -1452,266 +1505,7 @@ Overfull \hbox (12.55283pt too wide) in paragraph at lines 34--34
 ] [6
 
 
-]
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/18.06749'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/18.06749'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/18.06749'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/18.06749'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/18.06749'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/18.06749'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/b/n/18.06749'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/b/n/18.06749'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/b/n/18.06749'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/b/n/18.06749'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/b/n/18.06749'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/b/n/18.06749'.
-(microtype)             Ignoring protrusion settings for this character.
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
-
- []
-
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/7.52812'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/7.52812'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/7.52812'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/7.52812'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/7.52812'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/7.52812'.
-(microtype)             Ignoring protrusion settings for this character.
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
-
- []
-
-[7
-
-] [8
-
-
-] [9] [10
-
-]
-File: Img/GDOU.pdf Graphic file (type pdf)
-<use Img/GDOU.pdf>
-File: Img/master.png Graphic file (type bmp)
-<Img/master.png>
-
-
-./Tex/Front.tex:73: LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.73 \makecommittee
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./Tex/Front.tex:73: Missing } inserted.
-<inserted text> 
-                }
-l.73 \makecommittee
-                   
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-
-Overfull \hbox (306.79134pt too wide) detected at line 73
- [] 
- []
-
-./Tex/Front.tex:73: Extra }, or forgotten \endgroup.
-\HyOrg@maketitle ...ao {4} \UCAS@value@advisor }}}
-                                                   \\ {\zihao {4} \songti \U...
-l.73 \makecommittee
-                   
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./Tex/Front.tex:73: Missing } inserted.
-<inserted text> 
-                }
-l.73 \makecommittee
-                   
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-
-Overfull \hbox (306.79134pt too wide) detected at line 73
- [] 
- []
-
-./Tex/Front.tex:73: Extra }, or forgotten \endgroup.
-\HyOrg@maketitle ...eetype \UCAS@value@degree }}}}
-                                                   \\ {\zihao {4} \songti \U...
-l.73 \makecommittee
-                   
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./Tex/Front.tex:73: Missing } inserted.
-<inserted text> 
-                }
-l.73 \makecommittee
-                   
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-
-Overfull \hbox (306.79134pt too wide) detected at line 73
- [] 
- []
-
-./Tex/Front.tex:73: Extra }, or forgotten \endgroup.
-\HyOrg@maketitle ...hao {4}\UCAS@value@subject }}}
-                                                   \\ {\zihao {4} \songti \U...
-l.73 \makecommittee
-                   
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./Tex/Front.tex:73: Missing } inserted.
-<inserted text> 
-                }
-l.73 \makecommittee
-                   
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-
-Overfull \hbox (306.79134pt too wide) detected at line 73
- [] 
- []
-
-./Tex/Front.tex:73: Extra }, or forgotten \endgroup.
-\HyOrg@maketitle ...zihao {4}\UCAS@value@major }}}
-                                                   \\ {\zihao {4} \songti \U...
-l.73 \makecommittee
-                   
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./Tex/Front.tex:73: Missing } inserted.
-<inserted text> 
-                }
-l.73 \makecommittee
-                   
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-
-Overfull \hbox (306.79134pt too wide) detected at line 73
- [] 
- []
-
-./Tex/Front.tex:73: Extra }, or forgotten \endgroup.
-\HyOrg@maketitle ...o {4}\UCAS@value@institute }}}
-                                                   \\ \end {tabular} \vskip ...
-l.73 \makecommittee
-                   
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-[11] [12
-
-
-]
-File: Img/dabianweiyuan.png Graphic file (type bmp)
-<Img/dabianweiyuan.png>
-
-Overfull \hbox (12.55283pt too wide) in paragraph at lines 73--73
- [] 
- []
-
-[13
-
-] [14
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-
- []
-
-[15
-
-] [16
-
-
-]) [17] [18
-
-] (./Tex/Frontpages.tex
+]) (./Tex/Frontpages.tex
 Package microtype Info: Character `textendash ' is missing
 (microtype)             in font `TU/TimesNewRoman(0)/m/n/24.88'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -1822,47 +1616,40 @@ Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             Ignoring protrusion settings for this character.
  [1
 
-]
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/b/n/12.045'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/b/n/12.045'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/b/n/12.045'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/b/n/12.045'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/b/n/12.045'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/b/n/12.045'.
-(microtype)             Ignoring protrusion settings for this character.
-) (./Tex/Prematter.tex [2
 
 ]
 Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/10'.
+(microtype)             in font `TU/TimesNewRoman(0)/b/n/12.045'.
 (microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/10'.
+(microtype)             in font `TU/TimesNewRoman(0)/b/n/12.045'.
 (microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/10'.
+(microtype)             in font `TU/TimesNewRoman(0)/b/n/12.045'.
 (microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/10'.
+(microtype)             in font `TU/TimesNewRoman(0)/b/n/12.045'.
 (microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/10'.
+(microtype)             in font `TU/TimesNewRoman(0)/b/n/12.045'.
 (microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/TimesNewRoman(0)/m/n/10'.
+(microtype)             in font `TU/TimesNewRoman(0)/b/n/12.045'.
 (microtype)             Ignoring protrusion settings for this character.
-) [3
+) [2
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 70.
+
+No file Thesis.toc.
+\tf@toc=\write5
+\openout5 = `Thesis.toc'.
+
+[3
+
 
 ] [4
 
@@ -1955,6 +1742,24 @@ Package microtype Info: Character `textquotedblleft ' is missing
 Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/TimesNewRoman(0)/b/n/12'.
 (microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `TU/TimesNewRoman(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `TU/TimesNewRoman(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteleft ' is missing
+(microtype)             in font `TU/TimesNewRoman(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteright ' is missing
+(microtype)             in font `TU/TimesNewRoman(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblleft ' is missing
+(microtype)             in font `TU/TimesNewRoman(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' is missing
+(microtype)             in font `TU/TimesNewRoman(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
 File: Img/GDOU.pdf Graphic file (type pdf)
 <use Img/GDOU.pdf>
 [1
@@ -2017,19 +1822,11 @@ Overfull \hbox (6.08228pt too wide) in paragraph at lines 137--138
 
 [9]) (./Tex/Chap_3.tex [10]
 3
-[11
+) (./Tex/Chap_4.tex [11
 
 ]
 4
-) (./Tex/Chap_4.tex [12
-
-]
-5
-[13
-
-]
-6
-)) [14
+)) [12
 
 ]
 
@@ -2038,7 +1835,7 @@ Class ctexbook Warning: Command `\CTEXsetup' is deprecated.
 (ctexbook)              set.
 
 
-LaTeX Warning: Empty bibliography on input line 108.
+LaTeX Warning: Empty bibliography on input line 104.
 
 (./Tex/Backmatter.tex
 
@@ -2046,13 +1843,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 12.0pt
 (hyperref)                replaced by space on input line 4.
 
-[15
+[13
 
 
 
-] [16
+] [14
 
-]) [17
+]) [15
 
 ] (./Thesis.aux)
  ***********
@@ -2073,7 +1870,7 @@ Package rerunfilecheck Warning: File `Thesis.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `Thesis.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  9DD6575E13BFC2BC4634F1E932B9012A;4285.
+(rerunfilecheck)             After:  CA3019BC26516AF037B12DF496B6107C;4176.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                Thesis
@@ -2084,12 +1881,12 @@ Package logreq Info: Writing requests to 'Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29549 strings out of 474773
- 647670 string characters out of 5758620
+ 29539 strings out of 474773
+ 647346 string characters out of 5758620
  1944842 words of memory out of 5000000
- 51256 multiletter control sequences out of 15000+600000
- 571804 words of font info for 163 fonts, out of 8000000 for 9000
+ 51250 multiletter control sequences out of 15000+600000
+ 571796 words of font info for 162 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  107i,12n,111p,1223b,1278s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Thesis.pdf (39 pages).
+Output written on Thesis.pdf (25 pages).
