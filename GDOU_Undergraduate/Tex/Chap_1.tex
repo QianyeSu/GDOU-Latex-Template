@@ -1,0 +1,89 @@
+
+\chapter{前言}
+\label{chap:guide}
+
+\section{介绍}
+
+本广东海洋大学学位论文\texttt{GDOU}基于中国科学院大学学位论文模板ucasthesis模板的基础上进行调整而来.当前板基本满足最新的广东海洋大学大学学位论文撰写要求和封面设定。
+
+\section{系统要求}
+\begin{itemize}
+	\item Windows: \TeX{}Live or Mik\TeX{}  + TeXstudio
+	\item 其他系统没试过
+	
+	TeXstudio网址：\url{https://texstudio.sourceforge.net/}
+\end{itemize}
+
+\section{使用方法}
+\subsection{表格}
+表格格式请复制一下代码粘贴
+
+\begin{table}[!h]
+	\bicaption{\textbf{表格}}{\textbf{table} }
+	\centering
+	\footnotesize% fontsize
+	\setlength{\tabcolsep}{5pt}% column separation
+	\renewcommand{\arraystretch}{1.2}%row space 
+	\begin{tabular}{ccc}
+		\toprule[1.5pt]%上底边宽度
+		英文缩写 &英文全称  &中文名称 \\ \hline
+		英文缩写 &英文全称  &中文名称\\
+		英文缩写 &英文全称  &中文名称\\
+		英文缩写 &英文全称  &中文名称\\
+		英文缩写 &英文全称  &中文名称\\
+		\bottomrule [1.5pt]%下底边宽度
+	\end{tabular}
+	\label{tab:shiji}
+\end{table}
+常用数学公式的命令代码模板，请见如下WiKi：\url{https://en.wikibooks.org/wiki/LaTeX/Mathematics}
+
+latex表格生成网页:\url{https://www.tablesgenerator.com/#} 
+
+
+\subsection{图片}
+图片格式请复制一下代码粘贴
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.45\textwidth]{GDOU.pdf}
+	\bicaption{\textbf{请在括号内填写中文标题：广东海洋大学}{\linebreak\zihao{-5}替换：广东海洋大学，简称：广东海大 ，坐落于广东省湛江市，是国家海洋局与广东省人民政府共建的省属重点建设大学、广东省高水平大学重点学科建设高校、粤港澳高校联盟成员，入选卓越农林人才教育培养计划，是教育部本科教学水平评估优秀院校}}
+	{\textbf{请在括号内填写英语标题：Guangdong Ocean University}{\linebreak\zihao{-5}Replacement: Guangdong Ocean University, referred to as Guangdong Ocean University, is located in Zhanjiang City, Guangdong Province, is the State Oceanic Administration and the People's Government of Guangdong Province jointly built the provincial key construction universities, Guangdong Province, high-level university key disciplines of the construction of universities, Guangdong, Hong Kong and Macao members of the alliance of colleges and universities, selected for excellence in agriculture and forestry personnel education and training program, the Ministry of Education of the level of undergraduate teaching assessment of the excellent colleges and universities)}}
+	\label{图片标签}
+\end{figure}
+
+\subsection{参考文献}
+本模板使用biblatex包来控制参考文献格式
+
+参考文献的引用过程以实例的形式介绍，假设您需要引用名为Document Preparation System的文献，步骤如下：
+
+1）使用google scholar搜索Document Preparation System，在目标条目下点击引用，展开后选择 导入BibTeX，然后google将为你打开此文章的BibTeX索引信息，将它们copy添加到ref.bib文件中（此文件位于Biblio文件夹下）。
+
+参考文献生成步骤第一次使用请按：Xelatex---Biber---Xelatex
+第二次后请使用清除辅助文件的方式再重新第一次方式使用，前提是要大改参考文献
+
+2）你会发现索引信息中第一行为 \verb|@article{lamport1986document,|，其中的 
+	
+	\verb|lamport1986document| 
+	
+	即为此文献的label (即使中文文献也必须使用英文label)，想要在论文中索引此文献，有两种索引模式：\cite{lamport1986document}
+	
+	textual mode， 输入：
+	
+	\verb|\citet{lamport1986document}|
+	
+	正如此处所示 \cite{lamport1986document}; 
+	
+	parenthetical mode， 输入：
+	
+	\verb|\cite{lamport1986document}|
+	
+	正如此处所示 \cite{lamport1986document}。
+	
+	多文献索引用英文逗号隔开：
+	
+	\verb|\cite{lamport1986document,wikibook2014latex}|
+	
+	如此，即完成了文献的索引，请查看下本文档的参考文献一章，看看是不是就是这么简单呢？是的，就是这么简单\cite{wikibook2014latex}！
+	
+	如果是使用zotero的话，可以使用Better BibTex插件批量导出参考文献并调整参考文献的label。
+
+	

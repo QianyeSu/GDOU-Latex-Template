@@ -1,0 +1,118 @@
+%%
+%%                               Document Template
+%%
+%%%%% --------------------------------------------------------------------------------
+%% Copyright (C) Huangrui Mo <huangrui.mo@gmail.com> 
+%% This is free software: you can redistribute it and/or modify it
+%% under the terms of the GNU General Public License as published by
+%% the Free Software Foundation, either version 3 of the License, or
+%% (at your option) any later version.
+%%%%% --------------------------------------------------------------------------------
+%%
+%%%%************************ Document Class Declaration ******************************
+%%
+\documentclass[doublesided, openany]{Style/ucasthesis}% thesis template of UCAS
+\usepackage[backend=biber,bibstyle=gb7714-2015,
+citestyle=gb7714-2015,
+doi=false,
+url=false,
+pmid=false,
+]{biblatex}
+\addbibresource{Biblio/ref.bib}
+%% Multiple optional arguments:
+%% [scheme = plain] % for thesis writing of international students
+%% [<singlesided|doublesided|printcopy>] % single-sided, double-sided, or print layout
+%% [draftversion] % show draft version information, default is no show
+%% [fontset = <adobe|...>] % specify font set, default is automatic detection
+%% [standard options for ctex class]
+%%%%% --------------------------------------------------------------------------------
+%%
+%%%%************************* Command Define and Settings ****************************
+%%
+\usepackage[myhdr]{Style/commons}% common settings
+\usepackage{booktabs}%表格线条加粗包，不能在common文件夹启用，误删。
+%% usage: \usepackage[option1,option2,...,optionN]{commons}
+%% Multiple optional arguments:
+%% [<numbered|authoryear|alpha>] % citation and reference style
+%% <numbered>: textual: Jones [1]; parenthetical: [1]. default style
+%% <authoryear>: textual: Jones (1995); parenthetical: (Jones, 1995)
+%% <alpha>: textual: not available; parenthetical: [Jon95]
+%% [myhdr] % one available header and footer style, will enable fancyhdr
+%% [lscape] % provide landscape layout environment
+%% [geometry] % configure page layout by geometry package
+%% [list] % enable enhanced list environments, useful for Algorithm and Coding
+%% [color] % enable color package to use color, default package is xcolor
+%% [background] % enable page background, will auto enable color package
+%% [tikz] % enable tikz for complex diagrams, will auto enbale color package
+%% [table] % enable a table package for complex tables, default is ctable
+%% [math] % enable some extra math packages
+\usepackage{Style/custom}% user defined commands
+%%%%% --------------------------------------------------------------------------------
+%%
+%%%%******************************** Content *****************************************
+%%
+\begin{document}
+%%
+%%%%% --------------------------------------------------------------------------------
+%%
+%%%%******************************** Frontmatter *************************************
+%%
+\input{Tex/Front}%封面设置文件
+%% Frontmatter of Title page, Table of contents, Preface chapter.
+\frontmatter
+%%
+%% >>> Frontpages
+%%
+\input{Tex/Frontpages}%摘要以及目录文件
+%%
+%%% >>> List of Content
+%%
+\intotoc{\contentsname}% add a corresponding item to the contents table and bookmark
+\tableofcontents% contents catalog
+%%
+%% >>> prematter
+%%
+%\input{Tex/Prematter}% list of symbols, preface of books
+%%
+%%%%% --------------------------------------------------------------------------------
+%%
+%%%%******************************** Mainmatter **************************************
+%%
+%% Main topics.
+\mainmatter
+%%
+%%% >>> Main Contents
+%%
+\input{Tex/Main_Content}%
+%%%%% --------------------------------------------------------------------------------
+%%
+%%%%% --------------------------------------------------------------------------------
+%%
+%%%%******************************* Backmatter ***************************************
+%%
+%% Matters of Bibliography, Glossary, Index.
+%%
+\backmatter
+%%%%******************************** Appendix ****************************************
+%%
+%% Some subordinate chapters.
+\clearpage
+%\appendix%
+%\input{Tex/Appendix}%
+%%% >>> Bibliography
+%%
+\printbibliography[heading=bibliography,title=参考文献]
+%%
+%%%%******************************** Appendix ****************************************
+%%
+%% Some subordinate chapters.
+\clearpage
+\appendix%
+\input{Tex/Appendix}%
+%%% >>> Other contents
+%%
+
+\input{Tex/Backmatter}
+%%
+\end{document}
+%%%%% --------------------------------------------------------------------------------
