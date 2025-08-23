@@ -352,7 +352,10 @@
      {\zihao{-2}\heiti \textmd{\UCAS@value@title}}
      \vskip 10pt
      {\zihao{-3}\heiti \textmd{\UCAS@label@abstract}}
-  }}
+  }
+  % Set abstract content formatting: 宋体，五号，行距20磅
+  \zihao{5}\songti\linespread{1.43}\selectfont% 20磅行距约为1.43倍行距
+  }
   {}
 %% define chinese keywords
 \newcommand\keywords[1]{%
