@@ -348,11 +348,15 @@
 %%
 %% define chinese abstract
 \newenvironment{abstract}
-{\chapter[\UCAS@label@abstract]{
+{\cleardoublepage
+ \thispagestyle{plain}
+ \addcontentsline{toc}{chapter}{\UCAS@label@abstract}
+ \begin{center}
      {\zihao{-2}\heiti \textmd{\UCAS@value@title}}
      \vskip 10pt
      {\zihao{-3}\heiti \textmd{\UCAS@label@abstract}}
-  }
+ \end{center}
+ \vskip 20pt
   % Set abstract content formatting: 宋体，五号，行距20磅
   \zihao{5}\songti\linespread{1.43}\selectfont% 20磅行距约为1.43倍行距
   }
@@ -362,15 +366,64 @@
     \vspace{2ex}\noindent{\zihao{-4}\heiti \UCAS@label@keywords} #1}
 %% define engish abstract
 \newenvironment{englishabstract}
-{\chapter[\UCAS@label@englishabstract]{
+{\cleardoublepage
+ \thispagestyle{plain}
+ \addcontentsline{toc}{chapter}{\UCAS@label@englishabstract}
+ \begin{center}
      {\zihao{-2} \textbf \UCAS@value@englishtitle}
      \vskip 20pt
      {\zihao{-3} \textbf \UCAS@label@englishabstract}
-  }}
+ \end{center}
+ \vskip 20pt
+  % Set english abstract content formatting: Times New Roman，五号，行距20磅
+  \zihao{5}\rmfamily\linespread{1.43}\selectfont% Times New Roman, 20磅行距约为1.43倍行距
+  }
   {}
 %% define engish keywords
 \newcommand\englishkeywords[1]{%
   \vspace{2ex}\noindent{\zihao{-4} \textbf \UCAS@label@englishkeywords} #1}
+
+%% define special chapter with title info
+\newcommand\chapterwithinfo[1]{%
+  \cleardoublepage
+  \thispagestyle{plain}
+  % 论文题目信息部分
+  \begin{center}
+    \vskip 2\baselineskip
+    {\zihao{3}\heiti\bfseries\linespread{1.43}\selectfont \UCAS@value@title}
+    \vskip 1\baselineskip
+    
+    % 专业，学号，学生姓名
+    {\zihao{5}\songti\linespread{1.43}\selectfont 
+     \UCAS@value@subject，\UCAS@value@Studentnumber，\UCAS@value@author}
+    
+    \vskip 0.5\baselineskip
+    
+    % 指导教师
+    {\zihao{5}\songti\linespread{1.43}\selectfont 
+     指导教师：\UCAS@value@advisor}
+  \end{center}
+  \vskip 2\baselineskip
+  
+  % 章节标题部分 - 黑体小四号，行距20磅，段前段后各0.5行，顶格
+  \setcounter{chapter}{1}
+  \addcontentsline{toc}{chapter}{\numberline{1\hspace{.3em}}#1}
+  \phantomsection
+  \chaptermark{#1}
+  \vskip 0.5\baselineskip
+  {\raggedright \zihao{-4}\bfseries\heiti\linespread{1.43}\selectfont 1\enspace #1 \par}
+  \vskip 0.5\baselineskip
+}
+
+%% define acknowledgements with special format
+\newcommand\makeacknowledgements{%
+  \cleardoublepage
+  \thispagestyle{plain}
+  \addcontentsline{toc}{chapter}{鸣\hskip 1em\relax 谢}
+  \vskip 3\baselineskip
+  {\centering \zihao{3}\bfseries\heiti 鸣\quad 谢 \par}
+  \vskip 2\baselineskip
+}
 %%%%% --------------------------------------------------------------------------------
 %%
 %%%%**************************** Dotted Line in TOC **********************************目录中的虚线
