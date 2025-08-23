@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.4)  24 AUG 2025 00:09
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.4)  24 AUG 2025 00:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -654,18 +654,6 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
  (f:/Latex/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 )
-
-f:/Latex/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.sty:16186: Package keyval Error: pmid undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.16186 \blx@processoptions
-                           
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Document encoding is UTF8 ....
@@ -673,7 +661,7 @@ Package biblatex Info: ... and expl3
 (biblatex)             2024-02-20 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
-(f:/Latex/texlive/2024/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
+ (f:/Latex/texlive/2024/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
 Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 )) (./Style/commons.sty
 
@@ -908,88 +896,88 @@ Package: custom 2014/10/01 v0.1 custom macros package
 LaTeX Warning: Unused global option(s):
     [10.5pt].
 
-No file Thesis.aux.
+(./Thesis.aux)
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 54.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 54.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 54.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 54.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 54.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 54.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 54.
-LaTeX Font Info:    Redeclaring math accent \check on input line 54.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 54.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 54.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 54.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 54.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 53.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 53.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 53.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 53.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 53.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 53.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 53.
+LaTeX Font Info:    Redeclaring math accent \check on input line 53.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 53.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 53.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 53.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 53.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 54.
+(Font)              `operators' in the math version `normal' on input line 53.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 54.
+(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 53.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 54.
+(Font)              `operators' in the math version `bold' on input line 53.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 54.
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 53.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on input line 54.
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line 54.
+(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 54.
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 54.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 54.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 53.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/b/n on input line 54.
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/b/n on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/b/it on input line 54.
+(Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/b/it on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 54.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 54.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 53.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
-(f:/Latex/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+ (f:/Latex/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 )
 Package biblatex Info: XeTeX detected.
@@ -1002,18 +990,18 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Thesis.bbl' not found.
 
 No file Thesis.bbl.
-Package biblatex Info: Reference section=0 on input line 54.
-Package biblatex Info: Reference segment=0 on input line 54.
+Package biblatex Info: Reference section=0 on input line 53.
+Package biblatex Info: Reference segment=0 on input line 53.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package bicaption Info: Main language is not set on input line 54.
-LaTeX Info: Redefining \microtypecontext on input line 54.
-Package microtype Info: Applying patch `item' on input line 54.
-Package microtype Info: Applying patch `toc' on input line 54.
-Package microtype Info: Applying patch `eqnum' on input line 54.
-Package microtype Info: Applying patch `footnote' on input line 54.
-Package microtype Info: Applying patch `verbatim' on input line 54.
+Package bicaption Info: Main language is not set on input line 53.
+LaTeX Info: Redefining \microtypecontext on input line 53.
+Package microtype Info: Applying patch `item' on input line 53.
+Package microtype Info: Applying patch `toc' on input line 53.
+Package microtype Info: Applying patch `eqnum' on input line 53.
+Package microtype Info: Applying patch `footnote' on input line 53.
+Package microtype Info: Applying patch `verbatim' on input line 53.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -1041,18 +1029,16 @@ Package microtype Info: Character `textquotedblleft ' is missing
 Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/TimesNewRoman(0)/m/n/10.53937'.
 (microtype)             Ignoring protrusion settings for this character.
-Package hyperref Info: Link coloring OFF on input line 54.
+Package hyperref Info: Link coloring OFF on input line 53.
+(./Thesis.out) (./Thesis.out)
 \@outlinefile=\write4
 \openout4 = `Thesis.out'.
 
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
-(./Tex/Front.tex)
+ (./Tex/Front.tex)
 File: Img/GDOU.pdf Graphic file (type pdf)
 <use Img/GDOU.pdf>
 
-Overfull \hbox (20.13701pt too wide) in paragraph at lines 60--60
+Overfull \hbox (20.13701pt too wide) in paragraph at lines 59--59
 [][] 
  []
 
@@ -1092,13 +1078,13 @@ Package microtype Info: Character `textquotedblleft ' is missing
 Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/TimesNewRoman(0)/m/n/5'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
 (f:/Latex/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (f:/Latex/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
  (f:/Latex/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (f:/Latex/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -1440,18 +1426,16 @@ Package microtype Info: Character `textquotedblright ' is missing
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.53937pt
-(hyperref)                replaced by space on input line 70.
+(hyperref)                replaced by space on input line 69.
 
-No file Thesis.toc.
+(./Thesis.toc [3
+
+
+])
 \tf@toc=\write5
 \openout5 = `Thesis.toc'.
 
-[3
-
-
-] [4
-
-]
+ [4]
 
 Class ctexbook Warning: Command `\CTEXsetup' is deprecated.
 (ctexbook)              \ctexset { chapter = { format={\raggedright } } } is
@@ -1489,6 +1473,7 @@ Overfull \hbox (20.82904pt too wide) in paragraph at lines 38--39
 File: Img/GDOU.pdf Graphic file (type pdf)
 <use Img/GDOU.pdf>
 [1
+
 
 ]
 
@@ -1540,7 +1525,7 @@ Class ctexbook Warning: Command `\CTEXsetup' is deprecated.
 (ctexbook)              set.
 
 
-LaTeX Warning: Empty bibliography on input line 104.
+LaTeX Warning: Empty bibliography on input line 103.
 
 (./Tex/Appendix.tex [11
 
@@ -1563,17 +1548,8 @@ L3 programming layer <2022/07/14>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `Thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Thesis.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D009DF8440ADB96BBC74C9999E460D2A;4658.
+Package rerunfilecheck Info: File `Thesis.out' has not changed.
+(rerunfilecheck)             Checksum: D009DF8440ADB96BBC74C9999E460D2A;4658.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                Thesis
@@ -1584,10 +1560,10 @@ Package logreq Info: Writing requests to 'Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29405 strings out of 474773
- 642725 string characters out of 5758620
+ 29420 strings out of 474773
+ 642911 string characters out of 5758620
  1948842 words of memory out of 5000000
- 51109 multiletter control sequences out of 15000+600000
+ 51116 multiletter control sequences out of 15000+600000
  569817 words of font info for 152 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  107i,12n,111p,1223b,1278s stack positions out of 10000i,1000n,20000p,200000b,200000s
