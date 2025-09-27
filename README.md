@@ -48,9 +48,6 @@ Below is an example image included in the template directory:
 
 ![example](./example.png)
 
-## Source
-
-- Original template: [jiangtian1/GDOU](https://github.com/jiangtian1/GDOU/tree/main)
 
 ## License
 
